@@ -5,4 +5,5 @@ class TaxService {
     }
 }
 
+export { TaxService };
 export default new TaxService();
