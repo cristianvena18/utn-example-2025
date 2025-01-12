@@ -15,7 +15,9 @@ app.disable('x-powered-by')
 
 
 
-
+// example: meaningful names
+// example: be consistent
+// example: functions
 
 app.get('/', (req, res) => {
 
@@ -39,7 +41,8 @@ app.get('/', (req, res) => {
 
 
 
-
+// example: comments - minimal use whenever possible
+// example: early returns
 
 app.get('/products/:id', (req: Request, res: Response): any => {
     const id = Number(req.params.id)
@@ -77,28 +80,14 @@ app.get('/products/:id', (req: Request, res: Response): any => {
 
 
 
-app.post('/product', (req: Request, res: Response) => {
-
-    const body = req.body
-
-    const id = p.length + 1
-
-    const _product = {...body, id}
-
-    p.push(_product)
-
-    res.status(201).send()
-})
 
 
 
 
 
 
-
-
-
-
+// example: functions
+// example: magic numbers
 
 interface Product {
     price: number;
